@@ -1,0 +1,29 @@
+@import "../../../../styles/variables.module.scss";
+
+.button {
+  font-family: "CircularStd";
+  font-size: 14px;
+  padding: 6px 10px;
+  color: $WhiteColor;
+  border-radius: $BorderRadiusSize;
+  border: $BorderSize solid transparent;
+  outline: none;
+  margin: 5px;
+  transition: all 300ms ease;
+  &-primary {
+    background-color: $BlueColor;
+    &:hover {
+      color: $BlueColor;
+      background-color: $BackgroundColor;
+      border: $BorderSize solid $BlueColor;
+    }
+  }
+  &-secondary {
+    background-color: $GreyColor;
+    &:hover {
+      color: $GreyColor;
+      background-color: $BackgroundColor;
+      border: $BorderSize solid $GreyColor;
+    }
+  }
+}

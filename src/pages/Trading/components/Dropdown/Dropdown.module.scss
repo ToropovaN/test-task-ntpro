@@ -1,0 +1,16 @@
+@import "../../../../styles/variables.module.scss";
+
+.Dropdown {
+  font-size: 26px;
+  padding: 10px;
+  margin: -$BorderSize;
+  background-color: $WhiteColor;
+  &__option {
+    font-size: 18px;
+  }
+  &__wrapper {
+    overflow: hidden;
+    border-radius: $BorderRadiusSize;
+    border: $BorderSize solid $LightGreyColor;
+  }
+}

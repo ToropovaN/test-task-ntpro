@@ -1,0 +1,54 @@
+@import "./styles/reset.module.scss";
+@import "./styles/variables.module.scss";
+
+.App {
+  font-size: 20px;
+  color: $DarkGreyColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 400px;
+  min-width: 320px;
+  margin: auto;
+  background-color: $BackgroundColor;
+  border: $BorderSize solid $GreyColor;
+  border-radius: $BorderRadiusSize;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.TabsPanel {
+  display: flex;
+  flex-direction: row;
+  margin: -$BorderSize;
+  border-bottom: $BorderSize solid $GreyColor;
+  &__Tab {
+    border-radius: $BorderRadiusSize $BorderRadiusSize 0 0;
+    padding: 5px 10px;
+    text-align: start;
+    border: $BorderSize solid transparent;
+    margin-bottom: -$BorderSize;
+    &-active {
+      position: relative;
+      border: $BorderSize solid $GreyColor;
+      border-bottom: $BorderSize solid $BackgroundColor;
+    }
+  }
+}
+.Content {
+  flex: 1;
+}
+
+@media (max-width: 720px) {
+  .App {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .App {
+    width: 100%;
+  }
+}

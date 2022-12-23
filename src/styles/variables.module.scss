@@ -1,0 +1,23 @@
+$GreyColor: #6c747c;
+$DarkGreyColor: #4f5052;
+$LightGreyColor: #c7c7c7;
+
+$BlueColor: #0084f9;
+$BackgroundColor: #f8f9fa;
+$GreenColor: #21bf73;
+$RedColor: #d90429;
+$ShadowColor: rgba(0, 0, 0, 0.7);
+$BlackColor: #000000;
+$WhiteColor: #ffffff;
+
+$BorderRadiusSize: 5px;
+$BorderSize: 1px;
+
+@font-face {
+  font-family: "CircularStd";
+  src: local("CircularStd"), url("./CircularStd-Medium.woff") format("woff");
+}
+
+body {
+  font-family: "CircularStd";
+}
